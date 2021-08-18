@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pin-generator half-width">
+                    <input id="generate-input" class="form-control" type="text">
+                    <button id="generate-button" class="generate-btn">Generate Pin</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-section half-width">
+                    <input id="submit-input" class="form-control" type="text">
+                    <div class="numbers">
+                        <div class="calc-body">
+                            <div class="calc-button-row">
+                              <div class="button button1">7</div>
+                              <div class="button button1">8</div>
+                              <div class="button button1">9</div>
+                            </div>
+                            <div class="calc-button-row">
+                              <div class="button button1">4</div>
+                              <div class="button button1">5</div>
+                              <div class="button button1">6</div>
+                            </div>
+                            <div class="calc-button-row">
+                              <div class="button button1">1</div>
+                              <div class="button button1">2</div>
+                              <div class="button button1">3</div>
+                            </div>
+                            <div class="calc-button-row">
+                                <div id="delete-button" class="button"><</div>
+                                <div class="button button1">0</div>
+                                <div id="clear-button" class=" button">C</div>
+                            </div>
+                            <div>
+                                <button id="submit" type="submit" class="submit-btn">Submit</button>
+                                <p class="action-left"> <span id="leftTime">3</span> try left.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notify-section">
+            <section id="not-match" class="matching">
+                <p class="notify">❌ Pin Didn't Match, Please try again</p>
+            </section>
+            <section id="reGeneratePin-Message" class="matching">
+                <p class="notify">❌❌❌ Pin Didn't Match, Please Regenerate Pin  and try again ❌❌❌</p>
+            </section>
+            <section id="match" class="matching">
+                <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
